@@ -30,10 +30,21 @@ the devices interrupt the CPU and make it process their requests immediately
 
 - [ ] 2.5.2 Section Review, Questions 1, 3, 4, and 5
 
-1. Of the four levels of input/output in a computer system, which is the most universal and
-portable?
+1. level 3
+3. device drivers are necessary because they permit the os to communicate directly with the hardware
+4. level 1 the bios
+5. if they are using the same hardware the bios should be the same
 
-
+- [ ] 2.8
+7.The Fpu or floating point unit 
+8. 80 bits
+9.True 
+10.False
+12.False
+19.False
+20.False
+25. Hardwarde,Bios and os 
+26. it gives them more control and executes faster.
 
 
 
