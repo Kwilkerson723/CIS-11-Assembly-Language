@@ -1,0 +1,97 @@
+- [ ] 4.2.8 Section Review, Questions 1, 2, 3, 4, 5, 6	
+1. INC val2
+2. SUB eax,val3
+3. 	mov eax, val4
+	sub eax,val2
+
+4.If val2 is incremented by 1 using the ADD instruction, what will be the values of the Carry
+and Sign flags?
+CF=1
+SF=0
+
+The Carry, Zero, Sign, Overflow, Auxiliary Carry, and Parity flags are changed according
+to the value that is placed in the destination operand.
+
+5. If val4 is incremented by 1 using the ADD instruction, what will be the values of the Overflow
+and Sign flags?
+OF=1
+SF=0
+
+6.  Where indicated, write down the values of the Carry, Sign, Zero, and Overflow flags after
+each instruction has executed:
+mov ax,7FF0h
+add al,10h ; a. CF =1 SF =0 ZF =0 OF =0		;8000
+add ah,1 ; b. CF =0 SF =1 ZF =0 OF =0		;129
+add ax,2 ; c. CF =1 SF =1 ZF =0 OF =1		;33,026
+
+- [ ] 4.3.8 Section Review, Questions 1,2,3,4,5
+1. (True/False): The OFFSET operator always returns a 16-bit value.	;False
+2. (True/False): The PTR operator returns the 32-bit address of a variable. ;False
+3. (True/False): The TYPE operator returns a value of 4 for doubleword operands. ;True
+4. (True/False): The LENGTHOF operator returns the number of bytes in an operand.;False
+5. (True/False): The SIZEOF operator returns the number of bytes in an operand. ;False
+
+- [ ] 4.4.5 Section Review, Questions 4,5
+4.True
+
+
+- [ ] 4.10 Programming Exercises, Question 7
+7. Copy a String in Reverse Order
+Write a program with a loop and indirect addressing that copies a string from source to target,
+reversing the character order in the process. Use the following variables:
+source BYTE "This is the source string",0
+target BYTE SIZEOF source DUP('#')
+
+ExitProcess proto
+.data
+sum qword 0
+source BYTE "This is the source string",0
+target BYTE SIZEOF source DUP('#')
+.code
+main proc
+   mov rdi,0			;rdi is the index register
+   mov rcx,SIZEOF source	;loop counter
+   mov rbx,0
+L1:
+	mov al, source[rdi]	;the values aren't changing for some reason?
+	inc rbx
+	mov  target[rbx],al
+	inc rdi
+
+
+loop L1
+
+
+   call ExitProcess
+main endp
+end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

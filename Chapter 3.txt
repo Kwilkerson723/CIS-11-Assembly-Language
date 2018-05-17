@@ -1,0 +1,137 @@
+3.1.11 Section Review
+1. Using the value –35, write it as an integer literal in decimal, hexadecimal, octal, and binary
+formats that are consistent with MASM syntax.
+-35d
+-23h
+-43o
+-100011b
+
+2. (Yes/No): Is A5h a valid hexadecimal literal?
+Yes
+
+3. (Yes/No): Does the multiplication operator (*) have a higher precedence than the division
+operator (/) in integer expressions?
+No
+
+4. Create a single integer expression that uses all the operators from Section 3.1.2. Calculate
+the value of the expression.
+(2+3)-5*1000/100 +1-.5=.5
+
+- [ ] 3.2.4 Section Review, Questions 4, 5
+4. In the AddTwo program, which register holds the sum?
+eax
+
+5. In the AddTwo program, which statement halts the program?
+INVOKE ExitProcess,0
+
+- [ ] 3.3.3 Section Review, Questions 1, 2, 3, 4
+
+1. What types of files are produced by the assembler?
+object file or obj
+
+2. (True/False): The linker extracts assembled procedures from the link library and inserts
+them in the executable program.
+False
+
+3. (True/False): When a program’s source code is modified, it must be assembled and linked
+again before it can be executed with the changes.
+True
+
+4. Which operating system component reads and executes programs?
+The loader utility
+
+- [ ] 3.4.13 Section Review, Questions 1, 2, 3, 4, 5   
+PG. 74 shows the sizes
+1. Create an uninitialized data declaration for a 16-bit signed integer.
+;SWORD is a 16bit signed integer
+Var SWORD ? 
+2. Create an uninitialized data declaration for an 8-bit unsigned integer.
+Var BYTE ?
+3. Create an uninitialized data declaration for an 8-bit signed integer.
+Var SBYTE ?
+4. Create an uninitialized data declaration for a 64-bit integer.
+Var QWORD ?
+5. Which data type can hold a 32-bit signed integer?
+SDWORD
+
+- [ ] 3.5.5 Section Review Question 3
+pg.86,pg78
+3. Write a statement that causes the assembler to calculate the number of bytes in the following
+array, and assign the value to a symbolic constant named ArraySize:
+
+	myArray WORD 20 DUP(?)   ;DUP operator allocates storage for multiple data items, using a integer expression as a counter
+    					;20 WORD, uninitialiezed
+	ArraySize = ($ - myArray)
+
+
+- [ ] 3.9.1 Short Answer, Questions 4, 5, 6, 25
+
+4. Explain why the term assembler language is not quite correct
+Because the assembler does not have its own language. It is a program that reads the source file and produces objects. It should be machine language
+
+5. Explain the difference between big endian and little endian. Also, look up the origins of this
+term on the Web.
+Big endian orders from high to low 
+Little endian orders from low to high
+Origin 
+Danny Cohen "on holy wars and a plea for peace" 1 april 1980 , IEN 137
+
+
+6. Why might you use a symbolic constant rather than an integer literal in your code?
+Because a symbolic constant does not use any memory
+
+25. Which data directive creates a 32-bit signed integer variable?
+SDWORD
+
+- [ ] 3.9.2 Algorithm Workbench, Questions 4, 7, 13
+
+4. Find out if you can declare a variable of type DWORD and assign it a negative
+value. What does this tell you about the assembler’s type checking?
+You can.
+It tells me that there is no type checking on dword
+
+
+
+7. Declare an array of 120 uninitialized unsigned doubleword values.
+	myArray DWORD 120 DUP(?)
+
+
+
+13. Declare a string variable containing the word “TEST” repeated 500 times.
+
+
+
+
+
+
+
+
+
+
+- [ ] 3.10 Programming Exercises, Pick any 1 exercise
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

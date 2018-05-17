@@ -1,0 +1,57 @@
+pg 178 5.5.1 irvine 64 library
+
+- [ ] 2.1.5 Section Review, Questions 1,2,3,4 and 5
+
+1. The central processor unit (CPU) contains registers and what other basic elements?
+	The clock
+	The control unit
+	the aritmetic logic unit
+
+2. The central processor unit is connected to the rest of the computer system using what three
+buses?
+	Data bus, Address bus, Control bus
+
+3. Why does memory access take more machine cycles than register access?
+	because the registers are on the cpu while the computer has to find the memory
+
+
+4. What are the three basic steps in the instruction execution cycle?
+	Fetch, Decode, and Execute.
+
+5. Which two additional steps are required in the instruction execution cycle when a memory
+operand is used?
+	Fetch the operands and store the result
+
+- [ ] 2.4.3 Section Review, Question 5
+
+5. What is the purpose of the 8259A PIC controller?
+It handles external interrupts from hardware devices like the keyboard, system clock and disk drives.
+the devices interrupt the CPU and make it process their requests immediately
+
+- [ ] 2.5.2 Section Review, Questions 1, 3, 4, and 5
+
+1. Of the four levels of input/output in a computer system, which is the most universal and
+portable?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
