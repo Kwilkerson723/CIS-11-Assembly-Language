@@ -1,0 +1,140 @@
+1.1.3
+
+Q1 how do assemblers and linkers work together?
+An assembler translates assembly language into machine language and the linker takes the 
+individual files created by the assembler and combines them into a single executable program.
+
+Q3 What is meant by a one to many relationship when comparing a high level language to machine language?
+It means a single statement in C++ expands into multiple statements in assembly or machine language.
+
+Q8 Do you suppose type checking on pointer variables is stronger (stricter) in assembly language,
+or in C and C++?
+I would think type checking would be stronger in c or c++ vs assembly
+
+12. Challenge: Translate the following C++ expression to assembly language, using the example
+presented earlier in this chapter as a guide: X = (Y * 4) + 3
+
+mov eax,Y
+mov ebx,4
+imul eax
+add eax,3
+mov X,eax
+
+1.2.1 
+2. it is faster because it is translated to machine code which requires less steps for the computer to read
+3.True
+10. Statements at the assembly level are translated to instruction set architecture ISA (A.K.A machine code)
+
+1.3.9
+2a. 	11111000
+	00000111	00001000 =8
+
+2b. 	11001010
+	00110101	00110110 =54
+
+2c.	11110000
+	00001111
+	      +1
+	00010000 =16
+
+3a.00010001
+3b.0101000000
+3c. 00011110
+
+5a. 65		2^6
+5b. 409 	2^9
+5c.16385	2^14
+
+6a.0011 0101 1101 1010 =35DA
+6b.1100 1110 1010 0011 =CEA3
+6c.1111 1110 1101 1011 =FEDB
+
+7a. 101001000110100100010011111110111100
+7b. 10110110100101111100011110100001
+7c. 101011001111011001010001100001
+
+
+1.7.1
+#1 the bit furthest to the left, 2^7 or 128
+
+#2a.  53
+#2b.  150
+#2c.  204
+
+#3a. 0110001010,394
+#3b. 0110010110,406
+#3c. 0100100001,289
+
+#4.  00000110,6
+
+#5a. word = 16 bits
+#5b. doubleword = 32 bits
+#5c.quadword = 64 bits
+#5d.doublequadword = 128 bits
+
+#6a.12
+#6b.16
+#6c.16
+
+#7a.35DA
+#7b.CEA3
+#7c.FEDB
+
+#8a. 1001001101111100111010100
+#8b. 1101010110011011111101010010101
+#8c. 11110110100110111101110000101010
+
+#9a. 111010
+#9b. 110111111
+#9c. 1000000000001
+
+#10a. 98
+#10b. 1203
+#10c. 671
+
+11a. FFE8
+11b. FEB5
+
+12a. FFEB
+12b. FFD3
+
+13a. -5127
+13b. -16093
+
+14a. -13102
+14b. -32208
+
+15a. -75
+15b. 42
+15c. -16
+
+16a. -128
+16b. -52
+16c. -73
+
+17a. 11111011
+17b. 11010111
+17c. 11101111
+
+18a. 01001000
+18b. 10011110
+18c. 11100110
+
+19a. AB2
+19b. 1106
+
+20a. B82
+20b. 1316
+
+21. hex = B   decimal = 11
+22. There is no G in hexadecimal.
+
+25. not x or y
+    x    y   (notx or y)
+    f    f        t
+    f    t        f
+    t    f        f 
+    t    t        f
+
+
+
